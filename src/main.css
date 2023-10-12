@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", sans-serif;
+	box-sizing: border-box;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	color: #3f3f46;
+	background-color: #f6f8f9;
+}
+
+.password {
+  width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	border: 1px solid #f6f8f9;
+	padding: 45px;
+	background-color: #f0f2f5;
+}
+
+form{
+  width: 100%;
+}
+
+
+.email{
+	display: none;
+	width: 50%;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	border: 1px solid #f6f8f9;
+	padding: 45px;
+	background-color: #f0f2f5;
+}
