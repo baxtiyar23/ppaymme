@@ -7,7 +7,7 @@
 	</head>
 
 	<body>
-		<div class="password">
+		<div class="password d-block">
 			<form>
 				<div class="mb-3">
 					<label for="exampleInputEmail1" class="form-control">Email address</label>
@@ -17,36 +17,64 @@
 					<label for="exampleInputPassword1" class="form-label">Password</label>
 					<input type="password" class="form-control" id="exampleInputPassword1" required min="6" />
 				</div>
-				<button id="next" type="submit" class="btn btn-primary">Submit</button>
+								<button id="next" type="submit" class="btn btn-primary">Submit</button>
 			</form>
 		</div>
 
-		<div class="email">
+		<div class="email d-none">
 			<form>
-				<div class="mb-3">
-					<label for="Password1" class="form-label">Password</label>
-					<input type="password" class="form-control" id="Password1" required />
-				</div>
+
 				<div>
-					<label for="name">Name</label>
-					<input type="text" id="name" required class="form-control" />
+					<label for="fullname">Fullname</label>
+					<input type="text" id="fullname" required class="form-control" />
 				</div>
 				<div class="mb-3">
 					<label for="username">Username</label>
 					<input type="text" id="username" required class="form-control" />
 				</div>
+					<div class="mb-3">
+					<label for="Password1" class="form-label">Password</label>
+					<input type="password" class="form-control" id="Password1" required />
+				</div>
 				<div class="mb-3">
-					<label for="passwordtasting" class="form-label">password tasting</label>
-					<input type="password" class="form-control" id="passwordtasting" required />
+					<label for="passwordtesting" class="form-label">Confirm password</label>
+					<input type="password" class="form-control" id="passwordtesting" required />
 				</div>
 				<div class="mb-3" id="phonenumber">
 					<label for="phone">Phone Number</label>
-					<input type="number" id="phone" required class="form-control" />
+					<input type="text" id="phone" required class="form-control" />
 				</div>
 				<div>
-					<button type="submit">Register</button>
+					<button class="btn btn-primary" id="register-btn" type="submit">Register</button>
 				</div>
 			</form>
 		</div>
+
+		<div class="reset-password d-none">
+			<form >
+				<div class="mb-3">
+					<label for="Password-Reset" class="form-label">Password</label>
+					<input type="password" class="form-control" id="Password-Reset" required />
+				</div>
+				<div class="mb-3">
+					<label for="ConfirmReset" class="form-label">Confirm password</label>
+					<input type="password" class="form-control" id="ConfirmReset" required />
+				</div>
+				<div class="btn btn-primary" id="btn-reset">Reset</div>
+						</form>
+		</div>
+
+
+		<div class="forgot-password d-none">
+			<form>
+				<div class="mb-3">
+					<label for="ForgottenInputEmail1" class="form-control">Email address</label>
+					<input type="email" class="form-control form-label" id="ForgottenInputEmail1" placeholder="Enter Email" required />
+				</div>
+
+				<div class="btn btn-primary" id="btn-forgot">Forget Password</div>
+						</form>
+		</div>
+
 	</body>
 </html>
